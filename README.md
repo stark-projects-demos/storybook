@@ -2,7 +2,7 @@
 
 This is a demo Storybook to see the Stark addon in action.
 
-To test sending results to your [Stark dashboard](https://app.getstark.co), follow the instructions on [https://www.getstark.co/support/getting-started/using-storybook-addon/#main](our support page).
+To test sending results to your [Stark dashboard](https://app.getstark.co), follow the instructions on [our support page](https://www.getstark.co/support/getting-started/using-storybook-addon/#main).
 
 ## Getting Started
 
