@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Header } from './Header';
+import { Button } from './Button';
 import './page.css';
 
 type User = {
@@ -11,7 +12,8 @@ export const Page: React.FC = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
-    <article>
+    <article style={{ backgroundColor: '#F8F5EA'}}>
+
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
@@ -20,13 +22,9 @@ export const Page: React.FC = () => {
       />
 
       <section>
-        <h2>Pages in Storybook</h2>
+        <h2 id="pages-in-storybook" style={{ fontSize: 44, fontWeight: 'bolder'}}>Supercharge Team Work</h2>
         <p>
-          We recommend building UIs with a{' '}
-          <a href="https://componentdriven.org" target="_blank" rel="noopener noreferrer">
-            <strong>component-driven</strong>
-          </a>{' '}
-          process starting with atomic components and ending with pages.
+          With our project management, communication, and file sharing tools, you can work together seamlessly from anywhere in the world.
         </p>
         <p>
           Render pages with mock data. This makes it easy to build and review page states without needing to navigate to
@@ -41,21 +39,10 @@ export const Page: React.FC = () => {
             Assemble data in the page component from your services. You can mock these services out using Storybook.
           </li>
         </ul>
-        <p>
-          Get a guided tutorial on component-driven development at{' '}
-          <a
-            href="https://storybook.js.org/docs/react/get-started/introduction"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Storybook tutorials
-          </a>
-          . Read more in the{' '}
-          <a href="https://storybook.js.org/docs" target="_blank" rel="noopener noreferrer">
-            docs
-          </a>
-          .
-        </p>
+        <div>
+          <Button primary label="Try TeamSync" />
+          <Button label="Request a demo" />
+        </div>
         <div className="tip-wrapper">
           <span className="tip">Tip</span> Adjust the width of the canvas with the{' '}
           <svg width="10" height="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
